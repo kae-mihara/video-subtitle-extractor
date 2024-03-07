@@ -45,7 +45,7 @@ INTERFACE_KEY_NAME_MAP = {
     'Español': 'es'
 }
 interface_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'interface',
-                              f"{INTERFACE_KEY_NAME_MAP[settings_config['DEFAULT']['Interface']]}.ini")
+                                f"{INTERFACE_KEY_NAME_MAP[settings_config['DEFAULT']['Interface']]}.ini")
 interface_config.read(interface_file, encoding='utf-8')
 # ×××××××××××××××××××× [不要改]读取配置文件 end ××××××××××××××××××××
 
@@ -81,7 +81,7 @@ if fluid.is_compiled_with_cuda():
 
 # ×××××××××××××××××××× [不要改]读取语言、模型路径、字典路径 start ××××××××××××××××××××
 # 设置识别语言
-REC_CHAR_TYPE = settings_config['DEFAULT']['Language']
+REC_CHAR_TYPE = 'japan'#settings_config['DEFAULT']['Language']
 
 # 设置识别模式
 MODE_TYPE = settings_config['DEFAULT']['Mode']
